@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/galley.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" 
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" 
+    crossorigin="anonymous">
+
+    <title>Gallery | BehindTheCurtain</title>
+
+    <!--Navigation Bar-->
+<link rel="icon" type="image/png" href="../Images/favicon_io/favicon.ico" />
+</head>
+<body>
+   <nav class="navbar">
+    <label for="toggle" class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+    <input type="checkbox" id="toggle"/>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="../../Student_2/homePage.html">Home</a></li>
+      <li class="nav-item"><a href="../../Student_1/products.html">Buy products</a></li>
+      <li class="nav-item"><a href="../../Student_2/queryForm.html">Query form</a></li>
+      <li class="nav-item"><a href="../../Student_3/quiz.html">Quiz</a></li>
+      <li class="nav-item"><a href="../../Student_3/studentDetails.html">About us</a></li>
+      <li class="nav-item"><a href="../HTML/sitemap.html">Site Map</a></li>
+      <li class="nav-item"><a class="active" href="../HTML/gallery.html">Gallery</a></li>
+    </ul>
+    <div class="logo">BehindTheCurtain</div>
+  </nav>
+  <script src="../js/navbar.js" defer></script> 
+  <script src="../js/gallery.js" defer></script> 
+  
+   <!--middle code--> 
+     <h1 class="head">GALLERY</h1>
+    
+    <div class="edit">
+      <div class="fontsize">
+        <button onclick="changeFontSize('small')">
+          <span id="small">Aa</span>
+        </button>
+        <button onclick="changeFontSize('medium')">
+          <span id="medium">Aa</span>
+        </button>
+        <button onclick="changeFontSize('large')">
+          <span id="large">Aa</span>
+        </button>
+      </div>
+
+      <div class="color">
+        <button id="color-1" onclick="changeBackgroundColor('color-1')">
+          <i class="bi bi-brightness-high"></i>
+        </button>
+        <button id="color-2" onclick="changeBackgroundColor('color-2')">
+          <i class="bi bi-moon"></i>
+        </button>
+        <button id="color-3" onclick="changeBackgroundColor('color-3')">
+          <i class="bi bi-house"></i>
+        </button>
+    </div>
+  </div>
+
+    <div class="image-container-wrapper">
+      <div class="image-container" id="imageContainer">
+        <img src="../Images/Awards/tony.jpg" class="image" onclick="showDetails(1)" />
+        <img src="../Images/Awards/oliver.jpg" class="image" onclick="showDetails(2)" />
+        <img src="../Images/Awards/emmy.jpg" class="image" onclick="showDetails(3)" />
+        <img src="../Images/Awards/MTV.jpg" class="image" onclick="showDetails(4)" />
+        <img src="../Images/Awards/grammy.jpg" class="image" onclick="showDetails(5)" />
+        <img src="../Images/Awards/CMA.jpg" class="image" onclick="showDetails(6)" />
+        <img src="../Images/Awards/Prixde-lausanne.jpeg" class="image" onclick="showDetails(7)" />
+        <img src="../Images/Awards/benois.jpeg" class="image" onclick="showDetails(8)" />
+      </div>
+    </div>
+
+    <div id="detailsContainer">
+      <div id="details1" class="details">
+        <!-- Details for image 1 -->
+        <div class="image-details">
+          <img
+            src="../Images/Awards/tony.jpg" alt="Image 1 Description"/>
+        </div>
+        <div class="description">
+          <h2>Tony Awards</h2>
+          <p>
+            The Tony Awards, established in 1947, are considered the most prestigious honors in American theater. Named after Antoinette Perry, an actress, director, and producer, the awards celebrate excellence in live Broadway theater. Presented by the American Theatre Wing and The Broadway League, the Tonys recognize outstanding performances by actors, directors, designers, and other theatrical professionals. The awards also celebrate the creativity and craftsmanship behind the year's best Broadway productions, including plays and musicals.
+          </p>
+        </div>
+      </div>
+
+      <div id="details2" class="details">
+        <!-- Details for image 2 -->
+        <div class="image-details">
+          <img src="../Images/Awards/oliver.jpg" alt="Image 2 Description" />
+        </div>
+        <div class="description">
+          <h2>Laurence Olivier Awards</h2>
+          <p>Named after the renowned British actor Sir Laurence Olivier, the Olivier Awards were established in 1976 and are presented annually by the Society of London Theatre. These awards celebrate excellence in professional theater in London, England. The Olivier Awards honor achievements in various categories, including acting, directing, writing, design, and musical theater. They recognize the outstanding talent and contributions of individuals and productions that have graced the London stage.</p>
+        </div>
+      </div>
+
+      <div id="details3" class="details">
+        <!-- Details for image 3 -->
+        <div class="image-details">
+          <img src="../Images/Awards/emmy.jpg" alt="Image 3 Description" />
+        </div>
+        <div class="description">
+          <h2>Emmy Awards</h2>
+          <p>While the Emmy Awards primarily recognize excellence in the television industry, they also include categories dedicated to celebrating achievements in comedy. These awards acknowledge outstanding comedic performances, writing, and production in both comedy series and variety programs. The Emmy Awards are presented by the Academy of Television Arts & Sciences, with winners selected through a voting process by industry peers.</p>
+        </div>
+      </div>
+
+      <div id="details4" class="details">
+        <!-- Details for image 4 -->
+        <div class="image-details">
+          <img src="../Images/Awards/MTV.jpg" alt="Image 4 Description" />
+        </div>
+        <div class="description">
+          <h2>MTV Video Music Awards (VMAs)</h2>
+          <p>The MTV Video Music Awards (VMAs) were established in 1984 and celebrate achievements in the music video industry. While the VMAs cover various aspects of music entertainment, they also have categories that honor humorous music videos and comedic performances by artists. The VMAs are known for their vibrant and entertaining ceremonies, often featuring memorable performances and pop culture moments.</p>
+        </div>
+      </div>
+       <br>
+      <div id="details5" class="details">
+        <!-- Details for image 5 -->
+        <div class="image-details">
+          <img src="../Images/Awards/grammy.jpg" alt="Image 5 Description" />
+        </div>
+        <div class="description">
+          <h2>Grammy Awards</h2>
+          <p>Established in 1959 by the Recording Academy, the Grammy Awards are among the most prestigious music awards globally. They recognize outstanding achievements in the music industry across various genres, including pop, rock, hip-hop, classical, and more. The Grammy Awards celebrate the best recordings, performances, songwriting, and music production of the year. Winners are selected through a rigorous voting process involving music professionals.</p>
+        </div>
+      </div>
+
+      <div id="details6" class="details">
+        <!-- Details for image 6 -->
+        <div class="image-details">
+          <img src="../Images/Awards/CMA.jpg" alt="Image 6 Description" />
+        </div>
+        <div class="description">
+          <h2>Country Music Awards (CMA Awards)</h2>
+          <p>The Country Music Awards (CMA Awards) were established in 1967 and celebrate achievements in the country music genre. Presented by the Country Music Association, these awards recognize exceptional talent in country music, including performances by artists, songwriters, musicians, and music videos. The CMA Awards highlight the diversity and creativity within the country music community.</p>
+        </div>
+      </div>
+
+      <div id="details7" class="details">
+        <!-- Details for image 7 -->
+        <div class="image-details">
+          <img src="../Images/Awards/Prixde-lausanne.jpeg" alt="Image 7 Description" />
+        </div>
+        <div class="description">
+          <h2>Prix de Lausanne</h2>
+          <p>The Prix de Lausanne is an internationally renowned ballet competition that takes place annually in Lausanne, Switzerland. It was established in 1973 and is open to young ballet dancers from around the world, typically aged between 15 and 18. The competition aims to discover and support exceptionally talented young dancers by offering scholarships to prestigious ballet schools and companies. Dancers perform classical and contemporary variations in front of a panel of judges, who then award scholarships and apprenticeships to the most promising participants.</p>
+        </div>
+      </div>
+
+      <div id="details8" class="details">
+        <!-- Details for image 8 -->
+        <div class="image-details">
+          <img src="../Images/Awards/benois.jpeg" alt="Image 8 Description" />
+        </div>
+        <div class="description">
+          <h2>Benois de la Danse</h2>
+          <p>The Benois de la Danse is one of the most prestigious awards in the world of ballet. Named after the famous Russian ballet dancer Vaslav Nijinsky's character in "Le Spectre de la Rose," the award was established in 1991 in Moscow, Russia. It recognizes outstanding achievements in choreography, dancing, and ballet performances worldwide. Each year, a panel of international dance experts selects nominees and winners across several categories, celebrating the artistry and creativity of ballet dancers and choreographers.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+     
+ <!--Footer-->
+ <footer>
+  <body>
+  <div class="footer-content">
+    <a href="../HTML/student4.html" class="pageEditorName">Page Editor | Sehandu Siriwardhana</a>
+      <ul class="footer-links">
+          <li><a href="../../Student_2/homePage.html">Home</a></li>
+          <li><a href="../../Student_3/studentDetails.html">About</a></li>
+          <li><a href="../HTML/sitemap.html">Site Map</a></li>
+          <li><a href="../HTML/gallery.html">Gallery</a></li>
+      </ul>
+    <p class="copyright">&copy; 2023 BehindTheCurtain. All rights reserved.</p>
+    </div>
+</body>
+</footer>

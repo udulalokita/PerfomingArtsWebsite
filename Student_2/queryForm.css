@@ -1,0 +1,136 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-image: url(Images/Background-Sub.jpg);
+}
+
+/* Form container styles */
+.form {
+  position: inline;
+  max-width: 500px;
+  margin: auto;
+  padding: 50px 50px; /* Adjust the values here */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Label styles */
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Input styles */
+input[type="radio"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #555;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Button styles */
+input[type="submit"],
+input[type="reset"] {
+  background-color: #6527BE;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+/* Input hover styles */
+input[type="radio"]:hover,
+textarea:hover,
+select:hover {
+  background-color: #e0e0e0;
+}
+
+/* Button hover styles */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Container margin */
+.bottom-margin {
+  margin-bottom: 30px;
+}
+
+/* Rating container styles */
+.rating-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Rating input styles */
+.rating-container input[type="radio"] {
+  margin-right: 10px;
+}
+
+
+.popup{
+  width: 400px;
+  background: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.popup img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.popup h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px;
+}
+
+.popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: white;
+  border: 0;
+  outline: none;
+  font-size:18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) ;
+}

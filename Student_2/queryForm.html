@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Main.css">
+  <link rel="stylesheet" href="queryForm.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="icon" type="image/png" href="favicon_io/favicon.ico" />
+  <title>BehindTheCurtain</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <div class="navbar">
+      <nav class="navbar">
+        <label for="toggle" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <input type="checkbox" id="toggle"/>
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-items" href="homePage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-items" href="../Student_1/products.html">Buy products</a></li>
+          <li class="nav-item"><a class="nav-items active" href="queryForm.html">Query form</a></li>
+          <li class="nav-item"><a class="nav-items" href="../Student_3/quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-items" href="../Student_3/studentDetails.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-items" href="../Student_4/HTML/sitemap.html">Site map</a></li>
+          <li class="nav-item"><a class="nav-items" href="../Student_4/HTML/gallery.html">Gallery</a></li>
+        </ul>
+        <div class="logo">BehindTheCurtain</div>
+      </nav>
+    </div> 
+    <br><br><br><br><br><br><br>
+    <div class="ending bottom-margin">
+      <!-- Form -->
+      <div class="form">
+          <form method="POST" action="https://formsubmit.co/radil.20220571@iit.ac.lk" name="feedback" onsubmit="return validateForm()">
+            
+              <label >How satisfied were you with our website today? Choose from 0 to 10.</label>
+              <br>
+              <div class="rating-container">
+                <input type="radio" name="rating" value="0"><p>0</p>
+                <input type="radio" name="rating" value="1"><p>1</p>
+                <input type="radio" name="rating" value="2"><p>2</p>
+                <input type="radio" name="rating" value="3"><p>3</p>
+                <input type="radio" name="rating" value="4"><p>4</p>
+                <input type="radio" name="rating" value="5"><p>5</p>
+                <input type="radio" name="rating" value="6"><p>6</p>
+                <input type="radio" name="rating" value="7"><p>7</p>
+                <input type="radio" name="rating" value="8"><p>8</p>
+                <input type="radio" name="rating" value="9"><p>9</p>
+                <input type="radio" name="rating" value="10"><p>10</p>
+              </div>
+            
+            
+            
+              <label for="description">Please could you tell us your reasons for giving this rating?:</label>
+              <br>
+              <textarea id="description" name="description" rows="4" cols="50"></textarea>
+            
+            
+            
+              <label for="reason1">How did you complete this task today?</label>
+              <br>
+              <select id="reason1" name="How the task was completed">
+                <option value="Phone" id="Phone">Phone</option>
+                <option value="Website" id="Website">Website</option>
+                <option value="Web chat" id="Web_chat">Web chat</option>
+                <option value="Email" id="Email">Email</option>
+                <option value="Social media" id="Social_Media">Social media</option>
+              </select>
+            
+            
+            
+              <label for="reason2">If you have to complete this task again, How would you prefer to do it?</label>
+              <br>
+              <select id="reason2" name="How the task will be completed">
+                <option value="Phone" id="Phone-">Phone</option>
+                <option value="Website" id="Website-">Website</option>
+                <option value="Web chat" id="Web_chat-">Web chat</option>
+                <option value="Email" id="Email-">Email</option>
+                <option value="Social media" id="Social_Media-">Social media</option>
+              </select>
+            
+            
+              <input type="reset" value="Reset">
+              <input type="submit" value="Submit" onclick="openPopup()">
+              <div class="popup" id="popup">
+                <img src="Images/tick.png" alt="tick">
+                <h2>Thank you!</h2>
+                <p>Your rating has been successfully submitted. Thank you!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+              </div>
+            
+          </form>
+          
+      </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <a href="student2PageEditor.html" class="pageEditorName">Page Editor | Radil Rupasinghe</a>
+        <ul class="footer-links">
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="../Student_3/studentDetails.html">About</a></li>
+            <li><a href="../Student_4/HTML/sitemap.html">Site Map</a></li>
+            <li><a href="../Student_4/HTML/gallery.html">Gallery</a></li>
+        </ul>
+      <p class="copyright">&copy; 2023 BehindTheCurtain. All rights reserved.</p>
+    </div>
+  </footer>
+    </div>
+  <!-- Javascirpt for navbar and form   -->
+  <script src="navbar.js"></script>
+  <script src="form.js"></script>
+</body>
+</html>
+
+    

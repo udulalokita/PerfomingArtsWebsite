@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer styles */
+/* Styling for the 'pageEditorName' class, which floats the element to the left */
+.pageEditorName{
+
+  float: left;
+}
+
+/* Styling for anchor links (hyperlinks) */
+a{
+  color: white;
+}
+
+/* Styling for anchor links on hover */
+a:hover{
+  color:#AA77FF;
+}
+
+/* Styling for the footer section */
+footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for the content inside the footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the list of links inside the footer */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Styling for each list item (link) in the footer */
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Styling for anchor links inside the footer */
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Styling for anchor links inside the footer on hover */
+.footer-links li a:hover {
+  text-decoration: none;
+  color: #AA77FF;
+}
+
+/* Styling for the copyright text in the footer */
+.copyright{
+  margin-top: 10px;
+  
+}
+

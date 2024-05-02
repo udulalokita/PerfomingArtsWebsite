@@ -1,0 +1,142 @@
+/* Importing the 'Poppins' font from Google Fonts with various weights */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #161616;
+	min-height: 100vh;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+/* Styling for the header section */
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 80px;
+	margin-top: 10px;
+}
+
+/* Styling for h1 headings */
+h1{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	
+}
+
+/* Styling for the main container */
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 10px 0;
+}
+
+/* Styling for each card in the container */
+.container .card {
+	position: relative;
+	width: 250px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+/* Styling for the content inside each card */
+.container .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+
+/* Styling for the image box inside each card */
+.container .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+/* Styling for the images inside the image box */
+.container .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Styling for the headings inside the content box */
+.container .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+/* Styling for the span elements inside the headings */
+.container .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+/* Styling for the social media links */
+.container .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+
+/* Styling for each social media link */
+.container .card .sci li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	opacity: 1;
+}
+
+
+/* Styling for the anchor links inside the social media links */
+.container .card .sci li a {
+	color: #fff;
+	font-size: 20px;
+}
+
+/* Styling for the 'redirect' class */
+.redirect{
+	margin-top: -40px;
+	color: white;
+}
+

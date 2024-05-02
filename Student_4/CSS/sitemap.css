@@ -1,0 +1,80 @@
+
+/*SiteMap*/
+
+*{
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+    
+
+  circle {
+      fill: #050000;
+      stroke: #6527BE;
+      stroke-width: 4;
+  }
+  circle:hover{
+      stroke-width:10px;
+      stroke: black;
+      height: 120%;
+      width: 120%;
+      fill: #6527BE ;
+      transition: all 0.4s ease 0s;
+      stroke: #310274 ;
+      
+      
+    }
+    line {
+      stroke: 4;
+      
+    }
+    text {
+      
+      fill: rgb(255, 255, 255);
+      font-family: avenir;
+    }
+    .sitemap {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;      
+      background-position: center center;
+      background-size: 100%;
+    }
+    .site-map-container {    
+      
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    max-width: 1300px;
+    height: 900px;
+    margin-top: 100px;
+    padding: 40px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 30px;  
+    }
+  
+/*background image*/
+body {
+  background: url("../Images/Background.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.text-overlay {
+  margin-top: 0px;
+  position: absolute ;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}

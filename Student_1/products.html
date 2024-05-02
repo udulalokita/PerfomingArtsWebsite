@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Products</title>
+    <link rel="stylesheet" href="products.css"><!--linking the CSS files-->
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="Main.css"> 
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <script src="https://kit.fontawesome.com/3c3e489cf2.js" crossorigin="anonymous"></script>
+    <script src="navbar.js"></script>  <!--connecting the java Script-->
+    
+</head>
+<body> <!--Adding the navbar-->
+    <div id="Wrapper">
+        <nav class="navbar">
+        <label for="toggle" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <input type="checkbox" id="toggle">
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-items" href="../Student_2/homePage.html" >Home</a></li>
+            <li class="nav-item"><a class="nav-items active">Buy products</a></li><!--making the active tab-->
+            <li class="nav-item"><a class="nav-items" href="../Student_2/queryForm.html">Query form</a></li>
+            <li class="nav-item"><a class="nav-items" href="../Student_3/quiz.html">Quiz</a></li>
+            <li class="nav-item"><a class="nav-items" href="../Student_3/studentDetails.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-items" href="../Student_4/HTML/sitemap.html">Site map</a></li>
+            <li class="nav-item"><a class="nav-items" href="../Student_4/HTML/gallery.html">Gallery</a></li>
+        </ul>
+        <div class="logo">BehindTheCurtain</div>
+        </nav>
+        <script src="navbar.js"></script>
+    </div>
+
+<!-- Crating the product page -->
+    <div class="header">
+        <p><h1>Our Products</h1></p><!--header of the product page-->
+    </div>
+    <div class="container">
+        <div id="root"></div>
+        <!-- Creating the cart as a sidebar -->
+        <div class="sidebar">
+            <div class="head">My Cart
+                <!-- putting the image cart and the count -->
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count" > 0</p></div>
+            </div>
+            <div id="cartitem">Your Cart is Empty</div>
+            <div class="foot">
+                <!-- mcreating the total equals to 0 -->
+                <h3>Total</h3>
+                <h2 id="total">LKR 0.00</h2>
+            </div>  
+            <form id="form">
+                <!-- button to proceed to checkout page -->
+                <input class="btn" type="submit" id="submit" name="placeOrder" value="Proceed To checkout" onclick="return check()">  
+            </form>
+            <div class="data">
+                <ul>
+                    <!-- conditions of the carts -->
+                    <li>Your product will be delivered within 2 - 3 working days.</li>
+                    <br><li>Card Payment Only.</li>
+                    <br><li>You will be recieving a confirmation call once the order is recieved.</li>
+                </ul>
+            </div>            
+        </div>
+    </div>
+    <!-- connecting the javascrips of the product page -->
+    <script src="products.js"></script> 
+
+    <!-- connecting the footer to the page -->
+    <footer>
+        <div class="footer-content">
+            <!-- linking the page editor page -->
+          <a href="pageEditorSt1.html" class="pageEditorName">Page Editor | Thanuga Rodrigo</a>
+            <ul class="footer-links">
+                <li><a href="../Student_2/homePage.html">Home</a></li>
+                <li><a href="../Student_3/studentDetails.html">About</a></li>
+                <li><a href="../Student_4/HTML/sitemap.html">Site Map</a></li>
+                <li><a href="../Student_4/HTML/gallery.html">Gallery</a></li>
+            </ul>
+          <p class="copyright">&copy; 2023 BehindTheCurtain. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

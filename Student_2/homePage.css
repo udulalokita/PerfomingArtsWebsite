@@ -1,0 +1,195 @@
+body{
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+
+.Main-page{
+  background-image: url(Images/Background-Main.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.col{
+  flex-basis: 50%;
+}
+
+h1{
+  padding-left: 10px;
+
+}
+
+.home-description{
+  padding-left: 10px;
+}
+
+p{
+  line-height: 15px;
+  color: white;
+}
+
+
+
+.card-1, .card-2, .card-3, .card-4{
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 30px 75px;
+  background-image: url(Images/pic-1.png);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s ;
+}
+
+.card-1{
+  background-image: url(Images/Theatre2.jpg);
+}
+.card-2{
+  background-image: url(Images/Dance.jpg);
+}
+
+.card-3{
+  background-image: url(Images/Music.jpg);
+}
+
+.card-4{
+  background-image: url(Images/Comedy-3.jpg);
+}
+
+.card-1:hover{
+  transform: translateY(-10px);
+}
+.card-2:hover{
+  transform: translateY(-10px);
+}
+.card-3:hover{
+  transform: translateY(-10px);
+}
+.card-4:hover{
+  transform: translateY(-10px);
+}
+
+h4{
+  color: white;
+  text-shadow: 0 0 2px #999;
+}
+
+.card p{
+  text-shadow: 0 0 15px #000;
+  font-size: 8px;
+}
+
+.buyProducts{
+  background-image: url(Images/buyProducts-Main.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+  text-align: center;
+}
+
+.buyProducts h2{
+  padding-top: 25px;
+  color: white;
+}
+
+.buyProducts p{
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 50;
+}
+
+.item{
+  display: inline-block;
+  margin: 90px 50px;
+  padding: 125px 75px;
+  border-radius: 6px;
+}
+
+.item p{
+  margin: 20% auto;
+} 
+
+#item1{
+  background-image: url(Images/Music.jpg);
+}
+
+#item2{
+  background-image: url(Images/Dance.jpg);
+}
+
+.item:hover{
+  transform: translateY(-10px);
+}
+
+.quiz{
+  background-image: url(Images/Quiz.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+  text-align: center;
+}
+
+.quiz h2{
+  padding-top: 50px;
+  color: white;
+  margin-bottom: 255px;
+}
+
+
+
+.button{
+  padding: 20px;
+  width: 15%;
+  border-radius: 50px;
+  border-style: none;
+  font-size: 30px;
+  font-weight: 30;
+  background-color: #6527BE;
+  color: white;
+}
+
+.button:hover{
+  background-color: white;
+  color: black;
+}
+
+.button:active{
+  background-color: #6527BE;
+  color: white;
+}
+
+.quiz p{
+  margin-top: 30px;
+  padding-bottom: 125px;
+  font-size: 20px;
+  font-weight: 50;
+}
+
+.queryForm h3{
+  background-color: black;
+}
+
+.queryForm{
+  margin: 10px;
+  text-align: center;
+}
+
+.queryForm h3:hover{
+  background-color: #6527BE;
+}
+

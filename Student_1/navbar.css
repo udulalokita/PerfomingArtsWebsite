@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation bar styles */
+nav{
+  position: fixed;
+  background: black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styles */
+.logo{
+  color: white;
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+/* Hamburger menu styles */
+.hamburger{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span{
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+
+/* Navigation menu styles */
+.nav-menu{
+  display: flex;
+}
+
+.nav-menu li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav-menu li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Navigation items hover styles */
+a.nav-items:hover, a.nav-items:active{
+  background: #6527BE;
+  transition: .5s;
+}
+
+/* Active menu item styles */
+.active{
+  background-color: #6527BE;
+}
+
+#toggle{
+  display: none;
+}
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .logo{
+    padding-left: 10px;
+  }
+
+  /* Hide regular menu items for small screens */
+  .nav-menu{
+    display: none;
+  }
+
+  .hamburger{
+    display: flex;
+  }
+
+  #toggle{
+    display: none;
+  }
+
+  /* Show the active menu items vertically for small screens */
+  .nav-menu .active{
+    display: flex;
+    flex-direction: column;
+    background: #6527BE;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Adjust margins and padding for small screens */
+  .nav-menu li{
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-menu li:last-child{
+    margin-bottom: 0;
+  }
+
+  .nav-menu li a{
+    padding: 10px;
+  }
+}
